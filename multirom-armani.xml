@@ -2,6 +2,8 @@
 <manifest>
   <remote  name="MR"
            fetch="https://github.com/multirom-armani" />
+  <remote  name="MR6P"
+           fetch="https://github.com/multirom-nexus6p" />
   <remote  name="CM"
            fetch="https://github.com/CyanogenMod"
            review="review.cyanogenmod.org" />
@@ -18,7 +20,7 @@
   <project name="Team-Win-Recovery-Project" path="bootable/recovery" remote="MR" revision="android-6.0" />
   <project name="kexec-tools" path="system/extras/multirom/kexec-tools" remote="MR" revision="master" />
   <project name="libbootimg" path="system/extras/libbootimg" remote="multirom" revision="master" />
-  <project name="multirom_adbd" path="system/extras/multirom/adbd" remote="multirom" revision="master" />
+  <project name="multirom_adbd" path="system/extras/multirom/adbd" remote="MR6P" revision="master" />
   <remove-project name="android_external_busybox" />
   <project name="android_external_busybox" path="external/busybox" remote="CM" revision="cm-13.0" />
 </manifest>
